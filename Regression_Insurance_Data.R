@@ -118,14 +118,14 @@ Antony <- data.frame(age = 30,
                   children = 0,
                   smoker = "yes",
                   region = "northwest")
-print(paste0("Health care charges for Antony: ", round(predict(model_1, Animesh), 2)))
+print(paste0("Health care charges for Antony: ", round(predict(model_1, Antony), 2)))
 #2.
 Michel <- data.frame(age = 30,
                       bmi = 27.9,
                       children = 0,
                       smoker = "no",
                       region = "northwest")
-print(paste0("Health care charges for Michel: ", round(predict(model_1, Animesh_Patel), 2)))
+print(paste0("Health care charges for Michel: ", round(predict(model_1, Michel), 2)))
 
 #3.
 Amily <- data.frame(age = 40,
@@ -133,7 +133,7 @@ Amily <- data.frame(age = 40,
                    children = 2,
                    smoker = "no",
                    region = "southeast")
-print(paste0("Health care charges for Amily: ", round(predict(model_1, Amisha), 2)))
+print(paste0("Health care charges for Amily: ", round(predict(model_1, Amily), 2)))
 
 #4.
 
@@ -142,5 +142,5 @@ Bob <- data.frame(age = 30,
                    children = 0,
                    smoker = "no",
                    region = "northeast")
-print(paste0("Health care charges for Bob: ", round(predict(model_1, Jayesh), 2)))
+print(paste0("Health care charges for Bob: ", round(predict(model_1, Bob), 2)))
 
